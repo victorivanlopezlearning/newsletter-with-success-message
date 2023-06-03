@@ -1,4 +1,4 @@
-const { src, dest } = require('gulp');
+const { src, dest, watch } = require('gulp');
 
 // SASS
 const sass = require('gulp-sass')(require('sass'));
@@ -20,4 +20,10 @@ function css() {
         .pipe(sourcemaps.write('.'))
         .pipe( dest('assets/css') )
 };
+
+function dev() {
+    watch( 'src/scss/**/*.scss', css);
+};
+
 exports.css = css;
+exports.dev = dev;

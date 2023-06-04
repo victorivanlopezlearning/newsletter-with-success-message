@@ -31,26 +31,3 @@ p {
 a {
     text-decoration: none;
 }
-
-/* FOOTER */
-.attribution {
-    font-size: 1rem;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    padding: 1rem;
-}
-@media (min-width: 768px) {
-    .attribution {
-        font-size: 1.2rem;
-        position: absolute;
-        bottom: 0;
-    }
-}
-.attribution__text {
-    color: v.$white;
-}
-.attribution__link {
-    color: v.$color-primary;
-}

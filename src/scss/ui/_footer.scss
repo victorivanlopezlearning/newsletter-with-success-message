@@ -1,0 +1,24 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+/* FOOTER */
+.attribution {
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+    @include m.tablet {
+        font-size: 1.2rem;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .attribution__text {
+        color: v.$white;
+    }
+    .attribution__link {
+        color: v.$color-primary;
+    }
+}

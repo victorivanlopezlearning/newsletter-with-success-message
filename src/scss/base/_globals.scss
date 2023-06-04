@@ -1,0 +1,56 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: v.$font-primary;
+    font-size: 1.8rem;
+    background-color: v.$color-bg;
+    line-height: 1;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+p {
+    margin: 0;
+    line-height: 1.5;
+}
+a {
+    text-decoration: none;
+}
+
+/* FOOTER */
+.attribution {
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+@media (min-width: 768px) {
+    .attribution {
+        font-size: 1.2rem;
+        position: absolute;
+        bottom: 0;
+    }
+}
+.attribution__text {
+    color: v.$white;
+}
+.attribution__link {
+    color: v.$color-primary;
+}

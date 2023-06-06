@@ -12,52 +12,54 @@
 </head>
 <body>
 
-  <main class="sign-up container">
-    <picture>
-      <source media="(min-width: 768px)" srcset="./assets/images/illustration-sign-up-desktop.svg">
-      <img class="sign-up__image" src="./assets/images/illustration-sign-up-mobile.svg" alt="Image Sign-up">
-    </picture>
-
-    <div class="sign-up__content">
-      <h1 class="sign-up__heading">Stay updated!</h1>
-      <p class="sign-up__description">Join 60,000+ product managers receiving monthly updates on:</p>
+  <main class="main">
+    <div class="sign-up container">
+      <picture>
+        <source media="(min-width: 768px)" srcset="./assets/images/illustration-sign-up-desktop.svg">
+        <img class="sign-up__image" src="./assets/images/illustration-sign-up-mobile.svg" alt="Image Sign-up">
+      </picture>
   
-      <ul class="list-benefits">
-        <li class="benefit">
-          <img class="benefit__image" src="./assets/images/icon-list.svg" alt="Icon">
-          <p class="benefit__description">Product discovery and building what matters</p>
-        </li>
+      <div class="sign-up__content">
+        <h1 class="sign-up__heading">Stay updated!</h1>
+        <p class="sign-up__description">Join 60,000+ product managers receiving monthly updates on:</p>
+    
+        <ul class="list-benefits">
+          <li class="benefit">
+            <img class="benefit__image" src="./assets/images/icon-list.svg" alt="Icon">
+            <p class="benefit__description">Product discovery and building what matters</p>
+          </li>
+  
+          <li class="benefit">
+            <img class="benefit__image" src="./assets/images/icon-list.svg" alt="Icon">
+            <p class="benefit__description">Measuring to ensure updates are a success</p>
+          </li>
+  
+          <li class="benefit">
+            <img class="benefit__image" src="./assets/images/icon-list.svg" alt="Icon">
+            <p class="benefit__description">And much more!</p>
+          </li>
+        </ul>
+  
+        <form class="form">
+          <label class="form__label" for="email">Email address</label>
+          <input id="email" class="form__input" type="email" name="email" placeholder="email@company.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+  
+          <input class="form__btn" type="submit" value="Subscribe to monthly newsletter">
+        </form>
+      </div>
+    </div>
 
-        <li class="benefit">
-          <img class="benefit__image" src="./assets/images/icon-list.svg" alt="Icon">
-          <p class="benefit__description">Measuring to ensure updates are a success</p>
-        </li>
-
-        <li class="benefit">
-          <img class="benefit__image" src="./assets/images/icon-list.svg" alt="Icon">
-          <p class="benefit__description">And much more!</p>
-        </li>
-      </ul>
-
-      <form class="form">
-        <label class="form__label" for="email">Email address</label>
-        <input id="email" class="form__input" type="email" name="email" placeholder="email@company.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
-
-        <input class="form__btn" type="submit" value="Subscribe to monthly newsletter">
-      </form>
+    <div class="success-message container container--success d-none">
+      <div class="success-message__content">
+        <img class="success-message__image" src="./assets/images/icon-success.svg" alt="Icon Success">
+        <p class="success-message__heading">Thanks for subscribing!</p>
+        <p class="success-message__description">A confirmation email has been sent to ash@loremcompany.com. Please open it and click the button inside to confirm your subscription.</p>
+      </div>
+      <a class="success-message__btn" href="#">Dismiss message</a>
     </div>
   </main>
 
-  <!-- Success message start -->
 
-  <!-- Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message -->
-
-  <!-- Success message end -->
   
   <footer class="attribution">
     <p class="attribution__text">Challenge by <a class="attribution__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>

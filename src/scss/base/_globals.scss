@@ -40,4 +40,10 @@ ul {
 .container {
     width: min(100%, 85rem);
     margin: 0 auto;
+    &--success {
+        width: min(100%, 35rem);
+    }
+}
+.main .d-none {
+    display: none;
 }

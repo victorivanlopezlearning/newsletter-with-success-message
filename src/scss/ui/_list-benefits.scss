@@ -1,0 +1,13 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.list-benefits {
+    @include m.grid(1fr, 1rem);
+    margin: 2.5rem 0;
+}
+
+.benefit {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}

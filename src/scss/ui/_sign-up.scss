@@ -1,0 +1,35 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.sign-up {
+    background-color: v.$white;
+    @include m.tablet {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding: 1.5rem;
+        border-radius: 2rem;
+        gap: 2rem;
+        overflow: hidden;
+    }
+
+    &__image {
+        width: 100%;
+    }
+
+    &__content {
+        padding: 2rem;
+        @include m.tablet {
+            padding: 3rem;
+        }
+    }
+
+    &__heading {
+        font-size: 4rem;
+        margin: 2rem 0;
+        color: v.$color-secundary;
+        @include m.tablet {
+            font-size: 5.5rem;
+        }
+    }
+}

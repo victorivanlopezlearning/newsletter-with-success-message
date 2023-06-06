@@ -12,19 +12,40 @@
 </head>
 <body>
 
-  <main class="container">
-    <!-- Stay updated!
+  <main class="sign-up container">
+    <picture>
+      <source media="(min-width: 768px)" srcset="./assets/images/illustration-sign-up-desktop.svg">
+      <img class="sign-up__image" src="./assets/images/illustration-sign-up-mobile.svg" alt="Image Sign-up">
+    </picture>
 
-    Join 60,000+ product managers receiving monthly updates on:
+    <div class="sign-up__content">
+      <h1 class="sign-up__heading">Stay updated!</h1>
+      <p class="sign-up__description">Join 60,000+ product managers receiving monthly updates on:</p>
   
-    Product discovery and building what matters
-    Measuring to ensure updates are a success
-    And much more!
-  
-    Email address
-    email@company.com
-  
-    Subscribe to monthly newsletter -->
+      <ul class="list-benefits">
+        <li class="benefit">
+          <img class="benefit__image" src="./assets/images/icon-list.svg" alt="Icon">
+          <p class="benefit__description">Product discovery and building what matters</p>
+        </li>
+
+        <li class="benefit">
+          <img class="benefit__image" src="./assets/images/icon-list.svg" alt="Icon">
+          <p class="benefit__description">Measuring to ensure updates are a success</p>
+        </li>
+
+        <li class="benefit">
+          <img class="benefit__image" src="./assets/images/icon-list.svg" alt="Icon">
+          <p class="benefit__description">And much more!</p>
+        </li>
+      </ul>
+
+      <form class="form">
+        <label class="form__label" for="email">Email address</label>
+        <input id="email" class="form__input" type="email" name="email" placeholder="email@company.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+
+        <input class="form__btn" type="submit" value="Subscribe to monthly newsletter">
+      </form>
+    </div>
   </main>
 
   <!-- Success message start -->

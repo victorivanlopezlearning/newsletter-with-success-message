@@ -2,20 +2,45 @@
 @use 'base/mixins' as m;
 
 .form {
-    &__label {
-        color: v.$color-secundary;
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__label,
+    &__error {
         font-weight: bold;
         font-size: 1.2rem;
+        margin: 0;
+    }
+
+    &__label {
+        color: v.$color-secundary;
+    }
+
+    &__error {
+        color: darken(v.$color-primary, 30%);
     }
 
     &__input {
+        outline: none;
         border: 1px solid v.$grey;
         border-radius: 1rem;
         padding: 1.5rem 2.5rem;
         margin: 1rem 0;
         width: 100%;
         &:focus-visible {
-            outline: .5px solid v.$color-secundary;
+            outline: none;
+            border: 1px solid v.$color-secundary;
+        }
+    }
+
+    &__input--error {
+        border: 1px solid v.$color-primary;
+        color: darken(v.$color-primary, 30%);
+        background-color: lighten(v.$color-primary, 30%);
+        &:focus-visible {
+            border: 1px solid v.$color-primary;
         }
     }
 

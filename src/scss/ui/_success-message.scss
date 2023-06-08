@@ -36,7 +36,9 @@
         @include m.tablet {
             margin-bottom: 2rem;
         }
-        
+    }
+    &__email {
+        font-weight: bold;
     }
 
     &__btn {

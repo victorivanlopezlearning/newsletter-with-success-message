@@ -85,7 +85,7 @@ const renderMessageSuccess = ( email ) => {
 
     const successBtn = document.createElement('A');
     successBtn.className = 'success-message__btn';
-    successBtn.href = '/';
+    successBtn.href = '/newsletter-with-success-message/';
     successBtn.textContent = 'Dismiss message';
 
     successContainer.appendChild(successContent);

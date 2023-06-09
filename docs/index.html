@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link rel="stylesheet" href="./assets/css/app.css">
+</head>
+<body>
+
+  <main class="main">
+    <div class="sign-up container">
+      <picture>
+        <source media="(min-width: 768px)" srcset="./assets/images/illustration-sign-up-desktop.svg">
+        <img class="sign-up__image" src="./assets/images/illustration-sign-up-mobile.svg" alt="Image Sign-up">
+      </picture>
+  
+      <div class="sign-up__content">
+        <h1 class="sign-up__heading">Stay updated!</h1>
+        <p class="sign-up__description">Join 60,000+ product managers receiving monthly updates on:</p>
+    
+        <ul class="list-benefits">
+          <li class="benefit">
+            <img class="benefit__image" src="./assets/images/icon-list.svg" alt="Icon">
+            <p class="benefit__description">Product discovery and building what matters</p>
+          </li>
+  
+          <li class="benefit">
+            <img class="benefit__image" src="./assets/images/icon-list.svg" alt="Icon">
+            <p class="benefit__description">Measuring to ensure updates are a success</p>
+          </li>
+  
+          <li class="benefit">
+            <img class="benefit__image" src="./assets/images/icon-list.svg" alt="Icon">
+            <p class="benefit__description">And much more!</p>
+          </li>
+        </ul>
+  
+        <form class="form">
+          <div id="form-info" class="form__info">
+            <label class="form__label" for="email">Email address</label>
+          </div>
+          <input id="email" class="form__input" type="email" name="email" placeholder="email@company.com" required>
+  
+          <input id="form-submit" class="form__btn" type="submit" value="Subscribe to monthly newsletter">
+        </form>
+      </div>
+    </div>
+  </main>
+
+
+  
+  <footer class="attribution">
+    <p class="attribution__text">Challenge by <a class="attribution__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
+    <p class="attribution__text">Coded by <a class="attribution__link" href="https://github.com/victorivanlopez" target="_blank">Víctor Iván López</a>.</p>
+  </footer>
+
+  <script src="./assets/js/app.js"></script>
+</body>
+</html>

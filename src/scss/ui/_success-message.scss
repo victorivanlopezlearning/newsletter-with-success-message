@@ -29,12 +29,16 @@
         font-size: 3.5rem;
         line-height: 1;
         font-weight: bold;
+        @include m.tablet {
+            font-size: 3.8rem;
+        }
     }
 
     &__description {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         @include m.tablet {
-            margin-bottom: 2rem;
+            margin-bottom: 3rem;
+            font-size: 1.2rem;
         }
     }
     &__email {

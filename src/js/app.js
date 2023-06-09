@@ -55,7 +55,7 @@ const createLabelError = (errorMessage) => {
 };
 
 /**
- * 
+ * Create HTML Success Message
  * @param {String} email 
  */
 const renderMessageSuccess = ( email ) => {

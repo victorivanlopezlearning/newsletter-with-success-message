@@ -11,13 +11,11 @@ formSubmit.addEventListener('click', (e) => {
 
     if(email === '') {
         createLabelError('Email is required');
-        inputEmail.classList.add('form__input--error');
         return;
     };
 
     if(!isValidEmail(email)) {
         createLabelError('Valid email required');
-        inputEmail.classList.add('form__input--error');
         return;
     };
 
@@ -47,11 +45,12 @@ const createLabelError = (errorMessage) => {
         label.textContent = errorMessage;
     
         formLabels.appendChild(label);
+        inputEmail.classList.add('form__input--error');
     
         setTimeout(() => {
             label.remove();
             inputEmail.classList.remove('form__input--error');
-        }, 5000);
+        }, 3000);
     };
 };
 
